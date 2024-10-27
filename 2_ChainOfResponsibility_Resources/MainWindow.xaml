@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:_2_ChainOfResponsibility_Resources"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid  Margin="10">
+        <StackPanel Orientation="Vertical" Margin="100">
+            <TextBlock x:Name= "PasswordText" Text="Введите роль (Admin, Manager, User)" Width="300" Margin="0,0,0,10"  />
+            <TextBox x:Name="RoleTextBox" Width="300" Margin="0,0,0,10" />
+            <Button x:Name="SelectFileButton" Width="300" Content="Выбрать файл" Click="SelectFileButton_Click"/>
+            <TextBlock x:Name="ResultTextBlock" TextWrapping="Wrap" Margin="0,50,0,0" Width="376"/>
+        </StackPanel>
     </Grid>
 </Window>

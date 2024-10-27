@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace _13PZ
 {
-    //Originator - создание объекта хранителя
-    //для сохранения своего состояния
+    //Originator - создание объекта хранителя для сохранения своего состояния
 
     internal class Calculator
     {
@@ -18,17 +17,17 @@ namespace _13PZ
         public void Input(string input)
         {
             if (_currentState == "0" || _operation != null)
-                _currentState = input; // начинаем новое число
+                _currentState = input; // новое число
             else
-                _currentState += input; // продолжаем число
+                _currentState += input; // продолжение числа
         }
 
         public void SetOperation(string operation)
         {
             if (double.TryParse(_currentState, out _operand1))
             {
-                _operation = operation; // запоминаем операцию
-                _currentState = "0"; // сбрасываем текущее состояние для ввода второго операнда
+                _operation = operation; // запоминание операцию
+                _currentState = "0"; // сброс состояния
             }
         }
 
@@ -55,7 +54,7 @@ namespace _13PZ
             try
             {
                 if (_operation == null)
-                    return _currentState; // ничего не вычисляем, если операции нет
+                    return _currentState; // отсутствие вычислений без операции
 
                 if (!double.TryParse(_currentState, out double operand2))
                     throw new InvalidOperationException("Некорректное второе число");
@@ -80,8 +79,8 @@ namespace _13PZ
                         break;
                 }
 
-                _currentState = result.ToString(); // обновляем текущее состояние
-                _operation = null; // сбрасываем операцию
+                _currentState = result.ToString(); 
+                _operation = null; 
                 return _currentState;
             }
             catch (Exception ex)
