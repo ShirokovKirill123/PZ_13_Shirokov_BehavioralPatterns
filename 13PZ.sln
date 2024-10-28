@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13PZ_MementoCalculator", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_ChainOfResponsibility_Resources", "2_ChainOfResponsibility_Resources\2_ChainOfResponsibility_Resources.csproj", "{ED38B4A4-F901-4F80-BEE7-6FC1E36E1AB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverFinances", "ObserverFinances\ObserverFinances.csproj", "{E583016E-F823-45B5-BC30-98394C26589D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ED38B4A4-F901-4F80-BEE7-6FC1E36E1AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED38B4A4-F901-4F80-BEE7-6FC1E36E1AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED38B4A4-F901-4F80-BEE7-6FC1E36E1AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E583016E-F823-45B5-BC30-98394C26589D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E583016E-F823-45B5-BC30-98394C26589D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E583016E-F823-45B5-BC30-98394C26589D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E583016E-F823-45B5-BC30-98394C26589D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
